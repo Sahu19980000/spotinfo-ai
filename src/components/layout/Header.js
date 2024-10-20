@@ -260,7 +260,6 @@ function Header({
 
   return (
     <>
-      
       <Row gutter={[24, 0]}>
         <Col span={24} md={6}>
           <Breadcrumb>
@@ -310,7 +309,8 @@ function Header({
             placement={placement}
             visible={visible}
           >
-            <div layout="vertical">
+
+          <div layout="vertical">
               <div className="header-top">
                 <Title level={4}>
                   Configurator
@@ -407,9 +407,11 @@ function Header({
                   </ButtonContainer>
                 </div>
               </div>
-            </div>
+          </div>
+
           </Drawer>
-          <Link to="" className="btn-sign-in">
+          
+          <Link to="/sign-in" className="btn-sign-in">
             {profile}
             <span>Sign in</span>
           </Link>
