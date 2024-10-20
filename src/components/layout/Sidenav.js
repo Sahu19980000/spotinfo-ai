@@ -49,7 +49,7 @@ function Sidenav({ color }) {
             </Menu.Item>
 
             <Menu.Item key="7">
-              <NavLink to="/api-cards">
+              <NavLink to="/api-data">
                 <span className="icon">{dashboard}</span>
                 <span className="label">API Creds</span>
               </NavLink>
@@ -71,7 +71,7 @@ function Sidenav({ color }) {
             </Menu.Item>
 
             <Menu.Item key="7">
-              <NavLink to="/resource">
+              <NavLink to="/page-third">
                 <span className="icon">{dashboard}</span>
                 <span className="label">Resources</span>
               </NavLink>
@@ -109,7 +109,7 @@ function Sidenav({ color }) {
             </Menu.Item>
 
             <Menu.Item key="6">
-              <NavLink to="/question">
+              <NavLink to="/api-data/page15">
                 <span className="icon" style={{ background: page === "profile" ? color : "" }}>
                   {dashboard}
                 </span>

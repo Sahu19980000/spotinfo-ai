@@ -23,17 +23,24 @@ import "antd/dist/antd.css";
 import "./assets/styles/main.css";
 import "./assets/styles/responsive.css";
 import Collection_list from "./pages/Collection-list";
+import Pageten from "./pages/Pageten";
+import ApiForm from "./pages/pagetweleve";
+import Pagethird from "./pages/pagethird";
+import Pagefifteen from "./pages/pagefifteen";
 
 function App() {
   return (
     <div className="App">
+     
       <Switch>
         <Route path="/sign-up" exact component={SignUp} />
         <Route path="/sign-in" exact component={SignIn} />
         <Main>
           <Route exact path="/dashboard" component={Home} />
-          <Route exact path="/tables" component={Tables} />
-          <Route exact path="/billing" component={Billing} />
+          <Route exact path="/api-data" component={Pageten} />
+          <Route exact path="/api-data/page15" component={Pagefifteen} />
+          <Route exact path="/config-app" component={ApiForm} />
+          <Route exact path="/page-third" component={Pagethird} />
           <Route exact path="/rtl" component={Rtl} />
           <Route exact path="/collections" component={Collection_list} />
           <Redirect from="*" to="/dashboard" />
