@@ -89,7 +89,7 @@ function Sidenav({ color }) {
             </Menu.Item>
 
             <Menu.Item key="6">
-              <NavLink to="/widget">
+              <NavLink to="/pageseven">
                 <span className="icon" style={{ background: page === "profile" ? color : "" }}>
                   {dashboard}
                 </span>
@@ -98,7 +98,7 @@ function Sidenav({ color }) {
             </Menu.Item>
 
             <Menu.Item key="7">
-              <NavLink to="/api-key">
+              <NavLink to="/pagesixteen">
                 <span className="icon">{dashboard}</span>
                 <span className="label">API Keys</span>
               </NavLink>
