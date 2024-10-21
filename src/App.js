@@ -19,18 +19,21 @@ import Pagethird from "./pages/pagethird";
 import Pagefifteen from "./pages/pagefifteen";
 import Pagesixteen from "./pages/pageonesix";
 import Pageseven from "./pages/Pagesoneseven";
+import SearchApp from "./pages/Searchapp";
+import Pagefive from "./pages/pagefive";
 
 function App() {
   return (
     <div className="App">
-      
+    
       <Switch>
         <Route path="/sign-up" exact component={SignUp} />
         <Route path="/sign-in" exact component={SignIn} />
         <Main>
           <Route exact path="/dashboard" component={Home} />
+          <Route exact path="/search-app" component={SearchApp} />
           <Route exact path="/pagesixteen" component={Pagesixteen} />
-          <Route exact path="/pageseven" component={Pageseven} />
+          <Route exact path="/pageseven" component={Pagefive} />
           <Route exact path="/api-data" component={Pageten} />
           <Route exact path="/api-data/page15" component={Pagefifteen} />
           <Route exact path="/config-app" component={ApiForm} />

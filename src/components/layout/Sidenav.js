@@ -78,7 +78,7 @@ function Sidenav({ color }) {
             </Menu.Item>
 
             <Menu.Item key="8">
-              <NavLink to="/x-ray">
+              <NavLink to="/search-app">
                 <span className="icon">{dashboard}</span>
                 <span className="label">X-Ray Mode</span>
               </NavLink>
